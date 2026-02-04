@@ -9,15 +9,35 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 243.0, 127.0, 289.0, 701.0 ],
+        "rect": [ 115.0, 126.0, 289.0, 701.0 ],
         "boxes": [
+            {
+                "box": {
+                    "id": "obj-5",
+                    "maxclass": "newobj",
+                    "numinlets": 0,
+                    "numoutlets": 0,
+                    "patching_rect": [ 17.0, 143.0, 117.0, 22.0 ],
+                    "text": "lg.random.notes.v01"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-4",
+                    "maxclass": "newobj",
+                    "numinlets": 0,
+                    "numoutlets": 0,
+                    "patching_rect": [ 17.0, 97.0, 79.0, 22.0 ],
+                    "text": "lg.midi.in.v01"
+                }
+            },
             {
                 "box": {
                     "id": "obj-3",
                     "maxclass": "newobj",
                     "numinlets": 0,
                     "numoutlets": 0,
-                    "patching_rect": [ 17.0, 107.0, 87.0, 22.0 ],
+                    "patching_rect": [ 17.0, 192.0, 87.0, 22.0 ],
                     "text": "_.sound.in.v01"
                 }
             },
@@ -47,8 +67,19 @@
                             "modernui": 1
                         },
                         "classnamespace": "box",
-                        "rect": [ 34.0, 99.0, 1444.0, 849.0 ],
+                        "rect": [ 254.0, 109.0, 1444.0, 776.0 ],
                         "boxes": [
+                            {
+                                "box": {
+                                    "id": "obj-4",
+                                    "linecount": 2,
+                                    "maxclass": "comment",
+                                    "numinlets": 1,
+                                    "numoutlets": 0,
+                                    "patching_rect": [ 350.0, 173.0, 150.0, 33.0 ],
+                                    "text": "option + click on an object to bring up its manual"
+                                }
+                            },
                             {
                                 "box": {
                                     "id": "obj-29",

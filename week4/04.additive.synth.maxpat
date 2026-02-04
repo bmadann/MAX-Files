@@ -9,7 +9,7 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 404.0, 229.0, 1000.0, 711.0 ],
+        "rect": [ 404.0, 170.0, 1000.0, 711.0 ],
         "boxes": [
             {
                 "box": {
@@ -427,7 +427,7 @@
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 593.7499433755875, 96.5, 150.0, 60.0 ],
+                    "patching_rect": [ 593.7499433755875, 96.5, 153.0, 60.0 ],
                     "text": "kslider @mode 2 - mode 2 means sned \"note off\" messages as well as \"note on\" messages"
                 }
             },
@@ -938,6 +938,14 @@
         ],
         "parameters": {
             "obj-2": [ "live.gain~", "live.gain~", 0 ],
+            "parameterbanks": {
+                "0": {
+                    "index": 0,
+                    "name": "",
+                    "parameters": [ "-", "-", "-", "-", "-", "-", "-", "-" ],
+                    "buttons": [ "-", "-", "-", "-", "-", "-", "-", "-" ]
+                }
+            },
             "inherited_shortname": 1
         },
         "autosave": 0

@@ -41,8 +41,8 @@
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 1223.0, 464.0, 158.0, 22.0 ],
-                    "text": "rane 0. 1000., setdomain $1"
+                    "patching_rect": [ 1223.0, 464.0, 165.0, 22.0 ],
+                    "text": "range 0. 1000., setdomain $1"
                 }
             },
             {
@@ -80,16 +80,17 @@
             },
             {
                 "box": {
-                    "addpoints": [ 31.914893617021278, 0.02666666666666667, 0, 861.7021276595744, 0.8533333333333334, 0, 1989.3617021276596, 0.22666666666666666, 0 ],
+                    "addpoints": [ 0.0001595745284817923, 0.02666666666666667, 0, 0.0015957446451833907, 800.0, 0, 0.003617021195749019, 200.0, 0, 0.009946812275365036, 0.22666666666666666, 0 ],
                     "classic_curve": 1,
-                    "domain": 2000.0,
+                    "domain": 0.009999999776482582,
                     "id": "obj-85",
                     "maxclass": "function",
                     "numinlets": 1,
                     "numoutlets": 4,
                     "outlettype": [ "float", "", "", "bang" ],
                     "parameter_enable": 0,
-                    "patching_rect": [ 1193.0, 505.0, 200.0, 100.0 ]
+                    "patching_rect": [ 1193.0, 505.0, 200.0, 100.0 ],
+                    "range": [ 0.0, 1000.0 ]
                 }
             },
             {
@@ -121,7 +122,6 @@
                     "numoutlets": 1,
                     "outlettype": [ "" ],
                     "patching_rect": [ 945.5, 669.5, 99.0, 76.0 ],
-                    "presentation_linecount": 4,
                     "text": ";\rmodulator 1000.;\rcarrier 500.;\rmod.depth 0.25;\r"
                 }
             },
@@ -514,7 +514,7 @@
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "signal" ],
-                    "patching_rect": [ 576.0, 133.0, 43.0, 22.0 ],
+                    "patching_rect": [ 576.0, 156.0, 43.0, 22.0 ],
                     "text": "cycle~"
                 }
             },
@@ -740,7 +740,7 @@
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 413.0, 65.0, 150.0, 60.0 ],
+                    "patching_rect": [ 413.0, 65.0, 151.0, 60.0 ],
                     "text": "RM: Modulate the amplitude of one oscillaotr by multiplying it against another"
                 }
             },
@@ -969,6 +969,12 @@
                 "patchline": {
                     "destination": [ "obj-45", 0 ],
                     "source": [ "obj-41", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-49", 0 ],
+                    "source": [ "obj-42", 0 ]
                 }
             },
             {

@@ -13,6 +13,50 @@
         "boxes": [
             {
                 "box": {
+                    "id": "obj-4",
+                    "maxclass": "newobj",
+                    "numinlets": 1,
+                    "numoutlets": 0,
+                    "patching_rect": [ 185.0, 712.0, 61.0, 22.0 ],
+                    "text": "send~ in1"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-10",
+                    "maxclass": "live.meter~",
+                    "numinlets": 1,
+                    "numoutlets": 2,
+                    "outlettype": [ "float", "int" ],
+                    "patching_rect": [ 230.0, 542.0, 18.0, 139.0 ],
+                    "slidercolor": [ 0.079348079365577, 0.07934804057877, 0.079348050547289, 1.0 ]
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-13",
+                    "maxclass": "live.meter~",
+                    "numinlets": 1,
+                    "numoutlets": 2,
+                    "outlettype": [ "float", "int" ],
+                    "patching_rect": [ 147.0, 542.0, 18.0, 139.0 ],
+                    "slidercolor": [ 0.079348079365577, 0.07934804057877, 0.079348050547289, 1.0 ]
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-15",
+                    "maxclass": "gain~",
+                    "multichannelvariant": 0,
+                    "numinlets": 1,
+                    "numoutlets": 2,
+                    "outlettype": [ "signal", "" ],
+                    "parameter_enable": 0,
+                    "patching_rect": [ 185.0, 541.5, 22.0, 140.0 ]
+                }
+            },
+            {
+                "box": {
                     "id": "obj-31",
                     "maxclass": "comment",
                     "numinlets": 1,
@@ -66,18 +110,30 @@
             },
             {
                 "box": {
+                    "clipheight": 91.0,
                     "data": {
-                        "clips": []
+                        "clips": [
+                            {
+                                "absolutepath": "RUWA - HELLO MY NAME IS.mp3",
+                                "filename": "RUWA - HELLO MY NAME IS.mp3",
+                                "filekind": "audiofile",
+                                "id": "u969000657",
+                                "loop": 0,
+                                "content_state": {
+                                    "loop": 0
+                                }
+                            }
+                        ]
                     },
                     "id": "obj-19",
                     "maxclass": "playlist~",
-                    "mode": 0,
+                    "mode": "basic",
                     "numinlets": 1,
                     "numoutlets": 5,
                     "outlettype": [ "signal", "signal", "signal", "", "dictionary" ],
                     "parameter_enable": 0,
-                    "patching_rect": [ 761.6, 202.0, 150.0, 92.0 ],
-                    "quality": 0,
+                    "patching_rect": [ 913.0, 231.0, 150.0, 92.0 ],
+                    "quality": "basic",
                     "saved_attribute_attributes": {
                         "candicane2": {
                             "expression": ""
@@ -110,7 +166,7 @@
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "signal" ],
-                    "patching_rect": [ 431.0, 249.0, 40.0, 22.0 ],
+                    "patching_rect": [ 317.0, 232.0, 40.0, 22.0 ],
                     "text": "*~ 0.2"
                 }
             },
@@ -121,8 +177,8 @@
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "signal" ],
-                    "patching_rect": [ 431.0, 201.0, 66.0, 22.0 ],
-                    "text": "cycle~ 200"
+                    "patching_rect": [ 317.0, 184.0, 66.0, 22.0 ],
+                    "text": "cycle~ 220"
                 }
             },
             {
@@ -217,7 +273,7 @@
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 480.0, 84.0, 118.0, 47.0 ],
+                    "patching_rect": [ 480.0, 84.0, 120.0, 47.0 ],
                     "text": "built-in microphone | physical inputs on an audio interface"
                 }
             },
@@ -292,14 +348,36 @@
             },
             {
                 "patchline": {
+                    "destination": [ "obj-10", 0 ],
+                    "order": 0,
+                    "source": [ "obj-15", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-4", 0 ],
+                    "order": 1,
+                    "source": [ "obj-15", 0 ]
+                }
+            },
+            {
+                "patchline": {
                     "destination": [ "obj-18", 0 ],
                     "source": [ "obj-17", 0 ]
                 }
             },
             {
                 "patchline": {
+                    "destination": [ "obj-15", 0 ],
+                    "order": 1,
+                    "source": [ "obj-18", 0 ]
+                }
+            },
+            {
+                "patchline": {
                     "destination": [ "obj-22", 5 ],
-                    "midpoints": [ 440.5, 343.0, 860.5, 343.0 ],
+                    "midpoints": [ 326.5, 343.0, 860.5, 343.0 ],
+                    "order": 0,
                     "source": [ "obj-18", 0 ]
                 }
             },
@@ -371,7 +449,6 @@
                     "source": [ "obj-9", 0 ]
                 }
             }
-        ],
-        "autosave": 0
+        ]
     }
 }

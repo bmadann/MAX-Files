@@ -13,6 +13,18 @@
         "boxes": [
             {
                 "box": {
+                    "attr": "samps",
+                    "id": "obj-1",
+                    "maxclass": "attrui",
+                    "numinlets": 1,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "parameter_enable": 0,
+                    "patching_rect": [ 1088.0, 158.0, 150.0, 22.0 ]
+                }
+            },
+            {
+                "box": {
                     "format": 6,
                     "id": "obj-53",
                     "maxclass": "flonum",
@@ -725,6 +737,12 @@
             }
         ],
         "lines": [
+            {
+                "patchline": {
+                    "destination": [ "obj-6", 0 ],
+                    "source": [ "obj-1", 0 ]
+                }
+            },
             {
                 "patchline": {
                     "destination": [ "obj-13", 0 ],

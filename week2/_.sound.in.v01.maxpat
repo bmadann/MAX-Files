@@ -118,9 +118,9 @@
                                 "filename": "RUWA - HELLO MY NAME IS.mp3",
                                 "filekind": "audiofile",
                                 "id": "u969000657",
-                                "loop": 0,
+                                "loop": 1,
                                 "content_state": {
-                                    "loop": 0
+                                    "loop": 1
                                 }
                             }
                         ]
@@ -441,6 +441,7 @@
                     "source": [ "obj-9", 0 ]
                 }
             }
-        ]
+        ],
+        "autosave": 0
     }
 }

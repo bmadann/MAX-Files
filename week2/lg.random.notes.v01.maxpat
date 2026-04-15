@@ -13,6 +13,18 @@
         "boxes": [
             {
                 "box": {
+                    "color": [ 0.8705882352941177, 0.5098039215686274, 0.023529411764705882, 1.0 ],
+                    "id": "obj-68",
+                    "maxclass": "newobj",
+                    "numinlets": 0,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 84.0, 67.0, 76.0, 22.0 ],
+                    "text": "r event-bang"
+                }
+            },
+            {
+                "box": {
                     "id": "obj-11",
                     "maxclass": "comment",
                     "numinlets": 1,
@@ -381,6 +393,12 @@
                 "patchline": {
                     "destination": [ "obj-2", 0 ],
                     "source": [ "obj-6", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-10", 0 ],
+                    "source": [ "obj-68", 0 ]
                 }
             }
         ]
